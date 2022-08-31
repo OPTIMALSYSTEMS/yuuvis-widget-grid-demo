@@ -1,27 +1,19 @@
-# YuuvisWidgetGridDemo
+# yuuvis widget grid demo app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
+Starting from a regular Angular CLI project we first of all install the required libraries:
 
-## Development server
+- [@yuuvis/widget-grid](https://www.npmjs.com/package/@yuuvis/widget-grid)   (The grid itself)
+- [@yuuvis/styles](https://www.npmjs.com/package/@yuuvis/styles)    (just some helper styles and variables)
+- [@ngx-pwa/local-storage](https://www.npmjs.com/package/@ngx-pwa/local-storage) (for storing the grid in the browser)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Create some widgets
+There are two simple widgets in this demo application that showcase the two types of widgets available. You could create widgets with or without setup components. 
 
-## Code scaffolding
+Widgets without setup do not need any configuartion or setup. They are self contained like for example a widget that shows the current time or the weather in Berlin. In our case WidgetOneComponent just renders an SVG.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+But you could make your widgets mor dynamic by adding a setup component. For the weather widget example a setup could be used to specify a city you want to see the weather forecast for. WidgetTwoComponent has a simple setup component that you could put a name in. Then the widget prints out a friendly greeting.
 
-## Build
+If you want to know how to create those kinds of widgets take a look at the description of the [@yuuvis/widget-grid](https://www.npmjs.com/package/@yuuvis/widget-grid) library on NPM.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Using some yuuvis related widgets
+With the [@yuuvis/widget-grid-widgets](https://www.npmjs.com/package/@yuuvis/widget-grid-widgets) library we published a couple of widgets for your yuuvis Momentum project. If you want to learn more about that checkout the 'widget-grid-widgets' branch of this project.

@@ -1,0 +1,2 @@
+<label>Enter your name</label>
+<input type="text" [(ngModel)]="name" (ngModelChange)="widgetConfigChange.emit({name: name})">

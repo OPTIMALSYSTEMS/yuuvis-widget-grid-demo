@@ -1,0 +1,28 @@
+:host {
+    display: grid;
+    height:100%;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'toolbar' 'main';
+
+    .toolbar {
+        display: flex;
+        grid-area: toolbar;
+        background-color: #ccc;
+        color: #fff;
+        border-radius: 2px;
+        padding: calc(var(--app-pane-padding) / 2);
+        gap: calc(var(--app-pane-padding)/2);
+
+        .actions {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            gap: calc(var(--app-pane-padding)/2);
+        }
+    }
+
+    yuv-widget-grid {
+        grid-area: main;
+    }
+}
