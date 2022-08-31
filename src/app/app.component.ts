@@ -6,6 +6,7 @@ import {
   WidgetGridRegistry,
   WidgetGridUtils,
 } from '@yuuvis/widget-grid';
+import { ChartsSetupComponent, ChartsWidgetComponent, HitlistSetupComponent, HitlistWidgetComponent, StoredQuerySetupComponent, StoredQueryWidgetComponent } from '@yuuvis/widget-grid-widgets';
 import { WidgetOneComponent } from './widget-one/widget-one.component';
 import { WidgetTwoComponent } from './widget-two/widget-two.component';
 import { WidgetTwoSetupComponent } from './widget-two/widget-two.setup.component';
@@ -92,24 +93,24 @@ export class AppComponent {
         widgetComponent: WidgetTwoComponent,
         setupComponent: WidgetTwoSetupComponent,
       },
-      //     {
-      //       name: 'yuv.widget.hitlist',
-      //       label: 'Hitlist or count tile',
-      //       setupComponent: HitlistSetupComponent,
-      //       widgetComponent: HitlistWidgetComponent,
-      //     },
-      //     {
-      //       name: 'yuv.widget.storedquery',
-      //       label: 'Stored query',
-      //       setupComponent: StoredQuerySetupComponent,
-      //       widgetComponent: StoredQueryWidgetComponent,
-      //     },
-      //     {
-      //       name: 'yuv.widget.charts',
-      //       label: 'Charts',
-      //       setupComponent: ChartsSetupComponent,
-      //       widgetComponent: ChartsWidgetComponent,
-      //     },
+      {
+        name: 'yuv.widget.hitlist',
+        label: 'Hitlist or count tile',
+        setupComponent: HitlistSetupComponent,
+        widgetComponent: HitlistWidgetComponent,
+      },
+      {
+        name: 'yuv.widget.storedquery',
+        label: 'Stored query',
+        setupComponent: StoredQuerySetupComponent,
+        widgetComponent: StoredQueryWidgetComponent,
+      },
+      {
+        name: 'yuv.widget.charts',
+        label: 'Charts',
+        setupComponent: ChartsSetupComponent,
+        widgetComponent: ChartsWidgetComponent,
+      },
     ]);
   }
 

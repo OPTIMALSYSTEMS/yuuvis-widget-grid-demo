@@ -28,7 +28,17 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/@yuuvis/framework/i18n",
+                "output": "./assets/i18n/@yuuvis/"
+                },
+              {
+              "glob": "**/*",
+              "input": "node_modules/@yuuvis/widget-grid-widgets/i18n",
+              "output": "./assets/i18n/@yuuvis-wgw/"
+              }
             ],
             "styles": [
               "src/styles.scss"

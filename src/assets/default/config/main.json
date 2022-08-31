@@ -1,0 +1,19 @@
+{
+    "core": {
+        "apiBase": {
+            "core": "/api",
+            "api-web": "/api-web/api",
+            "predict": "/predict-api",
+            "viewer": "/viewer",
+            "logout": "/logout",
+            "oauth": "/oauth"
+        },
+        "languages": [
+            {
+                "iso": "en",
+                "label": "English",
+                "fallback": true
+            }
+        ]
+    }
+}

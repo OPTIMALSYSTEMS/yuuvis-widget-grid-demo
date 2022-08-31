@@ -1,19 +1,13 @@
 # yuuvis widget grid demo app
 
-Starting from a regular Angular CLI project we first of all install the required libraries:
+On this branch we extend the default grid by a collction of yuuvis Momentung related widgets. To do so we need to add some new dependencies:
 
-- [@yuuvis/widget-grid](https://www.npmjs.com/package/@yuuvis/widget-grid)   (The grid itself)
-- [@yuuvis/styles](https://www.npmjs.com/package/@yuuvis/styles)    (just some helper styles and variables)
-- [@ngx-pwa/local-storage](https://www.npmjs.com/package/@ngx-pwa/local-storage) (for storing the grid in the browser)
+- [@yuuvis/widget-grid-widgets](https://www.npmjs.com/package/@yuuvis/widget-grid-widgets)   (Library containing the widgets)
+- [@yuuvis/framework](https://www.npmjs.com/package/@yuuvis/framework)    (peer dependency for the widgets)
 
-## Create some widgets
-There are two simple widgets in this demo application that showcase the two types of widgets available. You could create widgets with or without setup components. 
+As we are connecting the app to a yuuvis Momentum backend (in order for the widgets to work) we need to setup the framework library first (check the documentation in NPM to see how this is done - or take a look at the diffrence between this branch and `main`). You'd also have to have the yuuvis dev proxy in place to be able to develop on your local maschine.
 
-Widgets without setup do not need any configuration or setup. They are self contained like for example a widget that shows the current time or the weather in Berlin. In our case WidgetOneComponent just renders an SVG.
+## Using the Momentum widgets
+In AppComponent you'll find the registration of the avalable widgets. Here we added the widgets comming from the `@yuuvis/widget-grid-widgets` lib.
 
-But you could make your widgets more dynamic by adding a setup component. For the weather widget example a setup could be used to specify a city you want to see the weather forecast for. WidgetTwoComponent has a simple setup component where you could enter a name. Then the widget prints out a friendly hello.
-
-If you want to know how to create those kinds of widgets take a look at the description of the [@yuuvis/widget-grid](https://www.npmjs.com/package/@yuuvis/widget-grid) library on NPM.
-
-## Using some yuuvis related widgets
-With the [@yuuvis/widget-grid-widgets](https://www.npmjs.com/package/@yuuvis/widget-grid-widgets) library we published a couple of widgets for your yuuvis Momentum project. If you want to learn more about that checkout the 'widget-grid-widgets' branch of this project.
+If you are now running the app you'll be able to add new widgets to the grid.
