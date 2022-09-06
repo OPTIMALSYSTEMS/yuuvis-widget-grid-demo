@@ -1,6 +1,6 @@
 # yuuvis widget grid demo app
 
-On this branch we extend the default grid by a collction of yuuvis Momentung related widgets. To do so we need to add some new dependencies:
+On this branch we extend the default grid by a collction of yuuvis Momentum related widgets. To do so we need to add some new dependencies:
 
 - [@yuuvis/widget-grid-widgets](https://www.npmjs.com/package/@yuuvis/widget-grid-widgets)   (Library containing the widgets)
 - [@yuuvis/framework](https://www.npmjs.com/package/@yuuvis/framework)    (peer dependency for the widgets)
